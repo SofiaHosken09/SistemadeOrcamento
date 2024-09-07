@@ -1,0 +1,206 @@
+Controle de Versões
+Versão	Data	Autor	Notas da Revisão
+01	06/09/2024	Sofia Hosken	
+
+Sumário
+1	Objetivos deste documento	1
+2	Situação atual e justificativa do projeto	1
+3         Levantamento de Requisitos       1
+4         Diagrama de Arquitetura    2
+5	Principais requisitos das principais entregas/produtos	2
+6	Documentação do sistema   2
+7	Código fonte e controle de versão  2
+8	Relátorio de versões  3
+
+⦁	Objetivos deste documento
+O objetivo deste documento é descrever o desenvolvimento do sistema de orçamento doméstico, que visa fornecer aos usuários uma ferramenta eficaz para o gerenciamento de suas finanças pessoais. Este documento detalha as funcionalidades e os objetivos do software, que inclui o controle e monitoramento de receitas e despesas, a categorização de gastos, a geração de relatórios financeiros e o envio de alertas para despesas excessivas. Ao fornecer uma visão clara e detalhada das finanças dos usuários, o sistema facilitará a gestão financeira pessoal, promovendo um planejamento orçamentário mais eficaz e ajudando os usuários a manter o equilíbrio financeiro até o final de cada mês.
+Situação atual e justificativa do projeto
+De acordo com a pesquisa "Saúde & Gestão", realizada pela fintech Onze, especializada em saúde financeira e previdência privada corporativa, mais da metade dos trabalhadores brasileiros (63%) enfrenta problemas financeiros. Esse dado revela uma realidade preocupante, indicando que uma parcela significativa da população brasileira tem dificuldade em planejar e gerenciar suas finanças de forma eficaz, resultando em desorganização financeira e endividamento.
+
+A situação atual evidencia uma lacuna significativa no acesso a ferramentas de gestão financeira adequadas e acessíveis. Muitos indivíduos ainda dependem de métodos tradicionais e manuais para o controle de suas finanças, que frequentemente são ineficazes e suscetíveis a erros. A falta de soluções automatizadas e intuitivas para o planejamento financeiro pessoal contribui para a persistência de problemas como gastos descontrolados, falta de previsibilidade orçamentária e dificuldades em alcançar metas financeiras.
+
+Neste contexto, o projeto de desenvolvimento de um sistema de orçamento doméstico justifica-se pela necessidade crescente de uma solução inovadora e acessível para a gestão financeira pessoal. O software proposto visa:
+
+Automatizar e Simplificar o Controle Financeiro:
+
+Proporcionar uma abordagem automatizada para o registro e categorização de receitas e despesas, reduzindo erros e economizando tempo.
+Facilitar um Planejamento Orçamentário Eficaz:
+
+Oferecer uma ferramenta para definir orçamentos, estabelecer metas financeiras e monitorar o progresso, permitindo um planejamento mais robusto e eficiente.
+
+Gerar Relatórios Detalhados e Insights:
+
+Disponibilizar relatórios financeiros detalhados que ajudem os usuários a analisar seus padrões de gastos e identificar áreas para melhorias.
+Emitir Alertas para Gastos Excessivos:
+
+Fornecer alertas personalizados para evitar despesas excessivas, promovendo um controle mais rigoroso do orçamento.
+Contribuir para a Educação Financeira:
+
+Servir como uma ferramenta educativa para auxiliar os usuários no aprendizado de práticas financeiras saudáveis e na gestão eficaz de suas finanças.
+Portanto, o projeto não apenas visa suprir uma necessidade emergente no mercado, mas também proporcionar uma solução concreta que possa transformar a gestão financeira pessoal, promovendo maior estabilidade e segurança financeira para os usuários.
+
+Levantamento de Requisitos
+1.1. Requisitos Funcionais
+Registro de Receitas e Despesas:
+
+O sistema deve permitir que os usuários registrem suas receitas e despesas, categorizando-os conforme necessário.
+Funcionalidades adicionais:
+Possibilidade de registrar contas a pagar e a receber.
+Opção para gerenciar contas pessoais e empresariais separadamente.
+Visualização de Transações:
+
+O sistema deve permitir a visualização de uma lista de transações com filtros para diferentes categorias e períodos.
+Funcionalidades adicionais:
+Exibição de movimentações específicas por conta (PJ e PF).
+Opção para visualizar transações por tipo (débitos, créditos, cartões de crédito, etc.).
+Categorização de Gastos:
+
+O sistema deve permitir a criação e edição de categorias para organizar as despesas.
+Funcionalidades adicionais:
+Criação de categorias personalizadas.
+Opção de associar transações a múltiplas categorias, se necessário.
+Visualização do Saldo:
+
+O sistema deve exibir o saldo atual com base nas receitas e despesas cadastradas.
+Funcionalidades adicionais:
+Exibição do saldo por conta (banco, cartões de crédito, etc.).
+Exibição de saldo consolidado, incluindo todas as contas.
+Geração de Relatórios:
+
+O sistema deve gerar relatórios financeiros detalhados, incluindo gráficos e tabelas.
+Funcionalidades adicionais:
+Relatórios sobre movimentação por conta e categoria.
+Relatórios de despesas por tipo de gasto e período.
+Exportação dos relatórios para formatos PDF e Excel.
+Alertas e Notificações:
+
+O sistema deve fornecer alertas para despesas excessivas ou para alertar sobre o orçamento atingido.
+Funcionalidades adicionais:
+Notificações sobre limites de gastos em categorias específicas.
+Alertas sobre vencimento de contas e pagamentos pendentes.
+Planejamento Orçamentário:
+
+Os usuários devem poder definir e ajustar orçamentos mensais e acompanhar o progresso.
+Funcionalidades adicionais:
+Definição de metas financeiras e acompanhamento do progresso.
+Comparação entre orçamento planejado e real.
+1.2. Requisitos Não Funcionais
+Desempenho:
+
+O sistema deve ser capaz de processar e exibir dados rapidamente, com tempos de resposta abaixo de 30 segundos.
+Usabilidade:
+
+A interface deve ser intuitiva, responsiva e fácil de usar, com uma curva de aprendizado mínima para novos usuários.
+Compatibilidade:
+
+O sistema deve ser compatível com navegadores modernos para a parte web.
+1.3. Requisitos de Usuário 
+
+Usuários Comuns:
+Pessoas que desejam gerenciar suas finanças pessoais de forma simples e eficiente.
+
+Usuários Avançados:
+Usuários que desejam funcionalidades adicionais, como relatórios detalhados e personalização avançada.
+
+Perfis de Usuário:
+Perfis para diferentes níveis de controle e acesso, incluindo:
+Usuários básicos: Acesso a funcionalidades principais e relatórios básicos.
+Usuários avançados: Acesso a relatórios detalhados, personalização de categorias e alertas.
+
+1.4. Requisitos Técnicos
+Tecnologias Utilizadas:
+
+C# .NET para o backend.
+React para o frontend.
+Sistemas de gerenciamento de banco de dados, se aplicável (mesmo que não seja utilizado diretamente neste projeto, pode ser necessário para futuras expansões).
+Outros Requisitos Técnicos:
+
+Integração com APIs externas, se necessário, para funcionalidades como conversão de moeda.
+Diagrama de Arquitetura:
+
+ 
+
+
+Principais requisitos das principais entregas/produtos
+
+As informações mais importantes:
+
+Informações sobre receitas e despesas:
+Função: Permite o registro de receitas e despesas por classificação.
+Requisitos: Dados de entrada, dados válidos, grupo editável.
+
+Visualização de eventos:
+Funções: Mostrar lista de eventos com opções de filtros.
+Obrigatório: Palavras ou nomes, filtrados por turma e horário, em ordem.
+Despesas:
+
+Função: Criar e gerenciar categorias de despesas.
+Solicitação: Adicionar/modificar um grupo, juntar um crédito a um grupo.
+Visualização de Saldo:
+
+Funções: Mostra o saldo atual com base nas receitas e despesas.
+Obrigatório: Comitê de Resumo Financeiro, Balanço.
+Desenho de relatório:
+
+Funções: Criar relatórios detalhados com imagens e palavras.
+Requisitos: Formato do relatório (mês, ano), gráficos, exportação para PDF/Excel.
+Alertas e notificações:
+
+Funções: Enviar alertas sobre contas e cheque especial.
+Obrigatório: Definir limites, enviar notificações por e-mail/mensagem de texto.
+Planejamento financeiro:
+
+Tarefa: Determinar e monitorar o orçamento mensal.
+Requisitos: Interface para definir orçamento, acompanhar o progresso.
+Validação:
+
+Todas as funções necessárias foram implementadas e testadas.
+A interface do usuário é intuitiva e fácil de usar.
+O sistema é adequado para navegadores modernos.
+Funções para tempo de resposta.
+
+2. Documentação do sistema
+Informações gerais: Documentação completa incluindo manuais do usuário.
+
+Requisitos básicos:
+
+Guia do usuário:
+
+Função: Fornece informações detalhadas aos usuários finais.
+Instruções: instruções passo a passo, capturas de tela, perguntas frequentes.
+Documentação técnica:
+
+Serviços: Arquitetura e design completos para desenvolvedores.
+Descrição: gráficos, contexto, cabeçalho da API. Guia do usuário:
+
+Uso: Instruções para instalação e configuração.
+Requisitos: etapas de instalação, requisitos, problemas comuns e soluções.
+Recepção:
+
+A informação é completa e de fácil compreensão.
+contém tudo o que é necessário para usar e manter o sistema.
+
+3. Código fonte e controle de versão
+Informações gerais: Repositório de código fonte, incluindo controle de versão e histórico de alterações.
+
+Requisitos principais:
+
+Estrutura do repositório:
+
+Atividades: Organizar código e documentação no GitHub.
+Requisitos: Pasta de amostra, arquivo README, instruções de uso.
+Histórico Versão:
+
+Funções: Manter um registro completo das alterações.
+Requisitos: Faça medições precisas, medições precisas.
+Regras de aceitação:
+Espaço de armazenamento bem conservado e conservado.
+Histórico de versões limpo e completo.
+
+Relátorio de versões:
+
+Versão: 1.0.0  
+Data: 06/09/2024
+ Descrição das Alterações  :   Versão inicial do projeto: Implementação da documentação e relátorio de versão.
+
+Fontes: https://www.cnnbrasil.com.br/economia/negocios/mais-da-metade-dos-trabalhadores-brasileiros-tem-problemas-financeiros-e-isso-afeta-saude-mental/#:~:text=Macroeconomia-,Mais%20da%20metade%20dos%20trabalhadores%20brasileiros%20tem%20problemas,e%20isso%20afeta%20sa%C3%BAde%20mental&text=Mais%20da%20metade%20dos%20trabalhadores%20brasileiros%20(63%25)%20enfrenta%20problemas,financeira%20e%20previd%C3%AAncia%20privada%20corporativa.
